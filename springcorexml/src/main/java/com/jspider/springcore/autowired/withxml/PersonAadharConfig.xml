@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.jspider.springcore.autowired.withxml.Aadhaar"
+		id="aadhaar">
+		<property name="aadhaarno" value="123457789" />
+		<property name="address" value="california,USA" />
+		<property name="dateofbirth" value="20/10/1997" />
+	</bean>
+
+	<bean class="com.jspider.springcore.autowired.withxml.Person" id="person1" autowire="byType">
+		<property name="name" value="Alex" />
+		<property name="contact" value="965842014" />
+	</bean>
+
+
+
+</beans>

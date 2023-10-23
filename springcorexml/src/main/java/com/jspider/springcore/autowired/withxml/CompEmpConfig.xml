@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <bean class="com.jspider.springcore.autowired.withxml.Employee" id="emp1">
+    <constructor-arg value="1"/>
+    <constructor-arg value="Alex"/>
+    <constructor-arg value="785452122"/>
+    </bean>
+    
+    <bean class="com.jspider.springcore.autowired.withxml.Employee" id="emp2">
+    <constructor-arg value="2"/>
+    <constructor-arg value="joyes"/>
+    <constructor-arg value="8852251420"/>
+    </bean>
+    
+    <bean class="com.jspider.springcore.autowired.withxml.Company" id="comp1" autowire="constructor">
+    <constructor-arg value="Facebook"/>
+    <constructor-arg value="1 Hacker Way, Menlo Park, CA 94025, USA"/>
+    
+    </bean>
+
+</beans>

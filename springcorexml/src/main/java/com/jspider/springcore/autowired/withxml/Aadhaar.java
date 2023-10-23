@@ -1,4 +1,4 @@
-package com.jspider.springcore.autowired;
+package com.jspider.springcore.autowired.withxml;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
